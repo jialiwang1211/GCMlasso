@@ -5,11 +5,12 @@ The use of the package is demonstrated by the Framingham heart disease data set,
 
 
 ### Installation: 
-library(devtools);
+library(devtools)\
 install_github("jialiwang1211/GCMlasso")
 
 ### Examples:
 ### run main function
+library(GCMlasso)\
 GCMlasso_obj<-GCMlasso(data=Framingham,var_ord=1:15,var_group=16,
   nsamp=1000,odens=1,nwarm=500,seed=1,s=1e-2,t=1e-2,verb=TRUE)
   
